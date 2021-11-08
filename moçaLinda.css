@@ -3,7 +3,7 @@
 
 body {
     margin:0;
-
+    overflow-x: hidden;
 }
 
 header {
@@ -98,6 +98,7 @@ nav ul li {
 }
 
 #photo1 {
+    margin-top: 102px;
     width: 100%;
     height: 601px;
     object-position: 50% 50%;
@@ -112,7 +113,7 @@ nav ul li {
     position: absolute;
     display: flex;
     flex-direction: column;
-    
+    top:210px;
     align-items: center;
 }
 
@@ -405,4 +406,19 @@ footer {
     color:#ffffff;
     text-decoration: none;
     outline: none;
+}
+
+button {
+    border-radius: 8px;
+    padding:  17.5px 20px;
+    cursor: pointer;
+    background-color: #535151;
+    color:#ffffff;
+    position: fixed;
+    top:510px;
+    right: 20px;
+    font-family: Raleway;
+    font-size: 18px;
+    border: none;
+    outline:none;
 }
