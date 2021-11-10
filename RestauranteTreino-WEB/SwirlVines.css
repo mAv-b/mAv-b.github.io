@@ -1,0 +1,561 @@
+@import url("https://db.onlinewebfonts.com/c/39a2c7f346d5cfae7045aeb2fb50d9ad?family=LuloCleanW01-OneBold");
+@import url("https://db.onlinewebfonts.com/c/6dd2f2510b4a00a5461b2455928209c2?family=BrandonGrotW01-Light");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+:root {
+    --fontLulo: 'LuloCleanW01-OneBold', sans-serif;
+    --fontBrandon: 'BrandonGrotW01-Light', sans-serif;
+    --fontOswald: 'Oswald', sans-serif;
+    --color1: #6e46d2;
+    --color2: #8454fc;
+    --color3: #794de7;
+    --color4: #c7c7c7;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+    background-color: #6e46d2;
+    font-family: var(--fontBrandon);
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+}
+
+header h3 {
+    margin: 11.5px auto 11.5px auto;
+    font-size: 18px;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header a:hover {
+    color: var(--color4);
+}
+
+
+
+#sec1 {
+    left: 120px ;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+
+#sec1 > div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items: center;
+    margin-top: 150px;
+}
+
+#logoWine {
+    text-align: center;
+    color:#ffffffde;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#logoWine > h3 {
+    font-family: var(--fontLulo);
+    font-size: 22px;
+    margin: 0;
+    letter-spacing: -0.08em;
+}
+
+#logoWine > h4 {
+    font-family: var(--fontOswald);
+    font-size:15px;
+    margin:0;
+    letter-spacing: 0.18em;
+    font-weight: 500;
+}
+
+#infoWeb {
+    font-family: var(--fontOswald);
+    color: white;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+#infoWeb > span {
+    font-size: 20px;
+    letter-spacing: 0.5em;
+    font-weight: 500;
+}
+
+#infoWeb > h1 {
+    font-size: 135px;
+    margin: 30px 0px 40px 0px ;
+    width: 700px;
+    font-weight: 400;
+    line-height: 1.08em;
+    letter-spacing: 0.01em;
+}
+
+#infoWeb > a {
+    padding: 18px 58px;
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    font-size: 18px;
+    color: var(--color2);
+    text-decoration: none;
+    transition: .4s ease 0s;
+}
+
+#infoWeb > a:hover {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#productWeek {
+    display: flex;
+    flex: row nowrap;
+}
+
+#productWeek > div {
+    border: 12px solid #ffffff;
+    width: 210px;
+}
+
+#productWeek > div > div {
+    
+    background-color: var(--color2);
+    padding:25px 0px;
+    text-align: center;
+}
+
+#productWeek > div > div span:nth-child(1) {
+    font-family: var(--fontOswald);
+    font-size:26px;
+    color: #ffffff;
+    
+}
+
+#productWeek > div > div h3 {
+    margin: 30px 0px 0px 0px;
+    font-family: var(--fontOswald);
+    font-size: 30px;
+    color:#ffffff;
+    font-weight: 300;
+}
+
+#productWeek > h2 {
+    color: #ffffff;
+    writing-mode: vertical-rl;
+    font-family: var(--fontOswald);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+}
+
+#productWeek  img {
+     width: 210px;
+     object-fit: cover;
+     object-position: 50% 50%;
+
+}
+
+#maskWineHeader {
+    background-color: #000000;
+}
+
+#WineHeader {
+    height: 1076px;
+    margin: 0;
+    opacity: 0.37;
+    background-image: url("https://static.wixstatic.com/media/ea71bb_c475f6a8de334557a50ae375472e6a71~mv2.jpg/v1/fill/w_1200,h_1076,al_t,q_85,usm_0.66_1.00_0.01/ea71bb_c475f6a8de334557a50ae375472e6a71~mv2.webp");
+    background-attachment: fixed;
+    background-position: 50% 0 ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sec2 {
+
+    height: 930px;
+
+}
+
+#titleSec2 {
+    margin-top: 100px;
+}
+
+#titleSec2 h2,#titleSec2 h3 {
+    color: var(--color2);
+    font-family: var(--fontOswald);
+    font-weight: 400;
+}
+
+#titleSec2 h2 {
+    font-size: 100px ;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+
+#titleSec2 h3 {
+    font-family: 20px ;
+    letter-spacing: 0.4em;
+    margin: 0;
+}
+
+#titleSec2 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+}
+
+#titleSec2 p {
+    font-family: var(--fontBrandon);
+    font-weight: 700;
+    font-size: 18px;
+    margin:0;
+}
+
+#titleSec2 a {
+    margin-top: 30px;
+    font-family: var(--fontOswald);
+    font-size: 18px;
+    font-weight: 400;
+    padding: 14.5px 81px;
+    border: 8px solid var(--color2);
+    color: var(--color2);
+    text-decoration: none;
+    transition: .4s ease 0s;
+}
+
+
+#titleSec2 a:hover {
+    color:#ffffff;
+    background-color: var(--color2);
+}
+
+#listShop {
+    margin-top: 100px;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-around;
+}
+
+.shopWine {
+    width: 195px;
+    position: relative;
+}
+
+.shopWine img {
+    width:195px;
+}
+
+.shopWine > div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+}
+
+.shopWine > div h3 {
+    font-family: var(--fontBrandon);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0px 0px 0px;
+}
+
+.shopWine > div span {
+    font-family: var(--fontOswald);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.shopWine > div a {
+    color: #ffffff;
+    font-family: var(--fontOswald);
+    font-size: 18px;
+    font-weight: 400;
+    background-color: var(--color2);
+    text-decoration: none;
+    padding: 7.5px 60px;
+    transition: .4s ease 0s;
+}
+
+.shopWine > div a:hover {
+    opacity: 0.5;
+    color: var(--color4);
+}
+
+.shopWine > div > div {
+    margin: 10px 0px;
+    border: 1px solid #000000;
+    padding: 0px 6px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 181px;
+    height: 38px;
+}
+
+.shopWine > div > div img {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+#notificationText {
+    box-sizing: border-box;
+    position: absolute;
+    margin: 0;
+    top:0px;
+    left: 0;
+    color:#ffffff;
+    background-color: var(--color2);
+    width: 93px;
+    height: 31px;
+    border: none;
+    font-family: var(--fontBrandon);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#buyButton {
+    border:none;
+    position: absolute;
+    top: 50.5%;
+    width: 188px;
+    height: 50px;
+    transition: .4s ease;
+}
+
+#buyButton span {
+    display: block;
+    margin: 0 auto;
+    font-family: var(--fontBrandon);
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity .2s ease 0s;
+    
+}
+
+.shopWine:hover #buyButton {
+    box-shadow: inset 0px -50px 0px 0px #ffffffc0;
+    
+}
+.shopWine:hover #buyButton span {
+    opacity: 1;
+    transition: opacity .4s ease 0.2s;
+}
+
+#sec3 {
+    margin-top: 100px;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--fontOswald);
+    color: #ffffff;
+}
+
+#sec3 div {
+    position: relative;
+    background-color: var(--color2);
+    padding: 61px 86px;
+}
+
+#sec3 div h2{
+    font-size: 56px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+#sec3 div > div {
+    box-sizing: border-box;
+    position: absolute;
+    padding:  13.5px 78px;
+    bottom: -35px;
+    left: calc(50% - 120px);
+    border: 8px solid #ffffff ;
+    transition: .4s ease 0s;
+}
+
+#sec3 div h3 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 400;
+}
+
+#sec3    div > div:hover {
+    background-color: #ffffff;
+    color: var(--color2);
+}
+
+#secContact {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#secContact > div {
+    background-color: var(--color1);
+    width:607px;
+    
+}
+
+#secContact h2 {
+    font-family: var(--fontOswald);
+    font-size: 56px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 23px 0px;
+    letter-spacing: 0.06em;
+    
+}
+
+label {
+    display: block;
+    font-family: var(--fontBrandon);
+    font-size: 18px;
+    color:#ffffff;
+    font-weight: 600;
+}
+
+#userEmail {
+    margin-top: 3px;
+    outline: none;
+    width: 318px;
+    height: 40px;
+    background-color: var(--color2);
+    border: 2.5px solid #ffffff;
+}
+
+#userEmail:hover {
+    border: 5px solid #ffffff;
+}
+
+::placeholder {
+    color: #ffffff;
+    padding-left: 15px;
+    font-size: 18px;
+    font-family: var(--fontBrandon);
+    font-weight: 600;
+}
+
+#submit {
+    outline: none;
+    border:2.5px solid #ffffff;
+    font-family: var(--fontOswald);
+    color: var(--color2);
+    font-size: 18px;
+    padding: 7.5px 30px;
+    margin: 0;
+    background-color: #ffffff;
+    transition: .4s ease 0s;
+}
+
+#submit:hover {
+    background-color: var(--color2);
+    color:#ffffff;
+    
+}
+
+#listSocial {
+    margin-top: 150px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.iconSocial {
+    border: 7px solid #ffffff;
+    padding:36px 35px;
+}
+
+.iconSocial img {
+    width: 51px;
+    height: 51px;
+}
+
+#secContact > section {
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+
+#secContact > section h3 {
+    font-family: var(--fontBrandon);
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin:0;
+}
+
+#infoContact {
+    background-color: var(--color2);
+}
+
+#infoVisit {
+    background-color: var(--color3);
+}
+
+#infoContact, #infoVisit {
+    box-sizing: border-box;
+    padding-left:80px ;
+    padding-top: 55px;
+    width:608px;
+    height:350px;
+}
+
+footer {
+    color: white;
+    margin-top: 50px;
+}
+
+#form {
+    padding-left: 75px;
+    padding-top: 55px;
+}
+
+#sec4 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#sec4 > a {
+    margin-top: 200px;
+}
+
+#sec4 > h2 {
+    margin-top:20px;
+    font-size: 100px;
+    font-family: var(--fontOswald);
+    color: var(--color2);
+    transition: .4s ease 0s;
+    font-weight: 400;
+}
+
+#sec4 > h2:hover {
+    color:#000000;
+}
+
+#flexDiv {
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
