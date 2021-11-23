@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'ubuntu';
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header > div {
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header > div > h1 {
+    margin-bottom: 5px;
+    font-size: 35px;
+}
+
+header > div > h3 {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+header img {
+    width: 900px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+#sectionOne {
+    background-color: #FFEDE6;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+#sectionOne > div {
+    
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+}
+
+#sectionOne h2 {
+    font-size: 30px;
+}
+
+#sectionOne li {
+    font-size: 20px;
+}
+
+#sectionOne img {
+    height: 500px;
+    width: 800px;
+}
+
+#sectionTwo {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background-color: #E8D4D1;
+}
+
+#sectionTwo > div {
+    width: 1000px;
+}
