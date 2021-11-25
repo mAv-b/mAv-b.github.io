@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 100vw;
+    height: 100vh;
+    animation: gradient 4s ease infinite;
+    background-image: linear-gradient(135deg, #ff8a00, #e52e71);
+    background-size: 400% 400%;
+}
+
+  @keyframes gradient {
+    0% {
+      background-position: 50% 0%;
+    }
+    50% {
+      background-position: 50% 100%;
+    }
+    100% {
+      background-position: 50% 0%;
+    }
+  }
+
+  article {
+      width: 55%;
+      height: 40%;
+      
+      border-radius: 40px;
+  }
+  article > div {
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(208.55% 383.06% at -118.65% -106.43%, rgb(248, 248, 248, 0.7) 0%, rgba(36, 36, 36, 0.7) 100%);
+      border-radius: 40px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+  }
+
+  #operaçãoCalculadora {
+      width:45%;
+      height: 100%;
+      border-radius: 40px 0px 0px 40px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;    
+      padding: 0px 60px;
+  }
+
+  #operaçãoCalculadora div div {
+      margin: 15px 0px;
+      border-radius: 100%;
+  }
+
+  #saidaCalculadora {
+      height: 100%;
+      width:55%;
+      border-radius: 40px 40px 40px 40px;
+      background: radial-gradient(208.55% 383.06% at -118.65% -106.43%, hsl(32, 100%, 50%, 0.4) 0%, hsl(338, 78%, 54%, 0.4) 100%);
+  }
+
+  .operação {
+      width:80px;
+      height:80px;
+      box-shadow: 2px 4px #404040;
+      background: radial-gradient(208.55% 383.06% at -118.65% -106.43%, hsl(32, 100%, 50%, 0.4) 0%, hsl(338, 78%, 54%, 0.4) 100%);
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .operação img {
+      width: 50px;
+      height: 50px;
+  }
+
+  #dados {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-end;
+      align-items: flex-start;
+      height: 100%;
+  }
+
+  #dados input {
+      border:none;
+      margin: 10px 0px 15px 0px;
+      height: 45px;
+      width: 170px;
+      border-radius: 0px 20px 20px 0px;
+      background: radial-gradient(208.55% 383.06% at -118.65% -106.43%, rgb(248, 248, 248, 0.7) 0%, rgba(36, 36, 36, 0.7) 100%);
+      color: rgb(233, 233, 233);
+      font-size: 30px;
+  }
+
+  #dados input:last-child {
+      margin-bottom: 35px;
+  }
+
+  ::placeholder {
+      color:rgb(233, 233, 233);
+      font-size: 30px;
+  }
+
+  #dados span {
+      text-align: end;
+      font-size: 40px;
+      color: rgb(211, 211, 211);
+      width:96%;
+      height: 60px;
+      align-self: flex-end;
+      margin-right: 10px;
+      overflow: auto;
+      overflow-y: hidden;
+      
+  }
+
+  /* #teclado {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: flex-start;
+  } */
