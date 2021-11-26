@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+    <html>
+
+        <head>
+
+            <title>JsBurgers</title>
+            <link rel="stylesheet" href="JsBurger.css" />
+            <meta charset="utf-8" />
+ 
+        </head>
+
+        <body>
+            
+            <header>
+
+                <div>
+                    <h1>J<span>s</span>B<span>urgers</span></h1>
+                </div>
+                
+            </header>
+
+            <section id="sec1">
+                <h2>Cardapio Online</h2>
+            </section>
+
+            <section id="sec2">
+
+                <div id="cardapio">
+
+                    <img id="perfilImgCardapio" src="cardapioOnlineBurger - Copia.webp" />
+                    
+                    <div>
+
+                        <form>
+
+                            <select name="pão" id="bread">
+                                <option value="none">Selecione Seu Pão</option>
+                                <option value="Pão Francês">Pão Francês(R$3,00)</option>
+                                <option value="Pão Australiano">Pão Australiano(R$8,00)</option>
+                                <option value="Pão de Brioche">Pão de Brioche(R$6,00)</option>
+                            </select>
+
+                            <select name="carne" id="meat">
+                                <option value="none">Selecione Sua Carne</option>
+                                <option value="hamPicanha">Hambúrguer de Picanha(R$13,00)</option>
+                                <option value="hamCostela">Hambúrguer de Costela(R$10,00)</option>
+                                <option value="hamVegano">Hambúrguer Vegano(R$12,00)</option>
+                            </select>
+
+                            <select name="salada" id="salad">
+                                <option value="none">Selecione Sua Salada</option>
+                                <option value="alface">Alface(R$1,50)</option>
+                                <option value="tomate">Tomate(R$1,50)</option>
+                                <option value="semSalada">Sem Salada(R$0,00)</option>
+                            </select>
+
+                            <select name="queijo" id="cheese">
+                                <option value="none">Selecione Seu Queijo</option>
+                                <option value="mussarela">Mussarela(R$3,00)</option>
+                                <option value="prato">Prato(R$3,00)</option>
+                                <option value="cheddar">Cheddar(R$5,00)</option>
+                            </select>
+
+                            <span id="resultado">R$ 0.00</span>
+                            <input type="button" value="Gerar Ficha" >
+
+                        </form>
+
+                    </div>
+
+                    <div id="ficha">
+                        <!-- <div></div> -->
+                        
+                            <img class="fichaItemBurguerSVG" src="pao1.svg" />
+                            <span id="fichaBread">Pão</span>
+
+                            <img class="fichaItemBurguerSVG" src="carne.svg" />
+                            <span id="fichaMeat">Carne</span>
+
+                            <img class="fichaItemBurguerSVG" src="salada.svg" />
+                            <span id="fichaSalad">Salada</span>
+
+                            <img class="fichaItemBurguerSVG" src="queijo.svg" />
+                            <span id="fichaCheese">Queijo</span>
+
+                            <img class="fichaItemBurguerSVG" src="pao2.svg" />
+
+                        <p id="fichaTotal">Total</p>
+
+                        <span id="nameFicha">Ficha</span>
+                        <hr>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <script src="JsBurger.js"></script>
+
+        </body>
+
+    </html>

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bowlby+One+SC&family=Oregano:ital@0;1&family=Rancho&family=Yanone+Kaffeesatz:wght@200;300&display=swap');
+
+:root {
+    --color1 : #EDA922;
+    --color2 : #292419;
+    --color3 : #dde2e3;
+    --color4 : #eeeeee;
+    --fontBow : 'Bowlby One SC', cursive;
+    --fontNeue : 'Bebas Neue', cursive;
+    --fontYanone : 'Yanone Kaffeesatz', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 200vh;
+}
+
+header {
+    background-image: url('3Burgers\ -\ Copia.webp');
+    background-attachment: fixed;
+    background-position: -100px -40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30%;
+}
+
+header > div {
+    width: 100%;
+    height: 100%;
+    background-color: #352a1292;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > div > h1 {
+    font-family: var(--fontBow);
+    color: var(--color1);
+    opacity: 0.9;
+    font-size: 100px;
+    font-style: italic;
+    letter-spacing: 15px;
+    
+}
+
+ header > div > h1 > span {
+    font-size: 95px;
+}
+
+#sec1 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec1 > h2 {
+    font-family: var(--fontNeue);
+    font-size: 65px;
+    color: var(--color2);
+    letter-spacing: 0.4rem;
+}
+
+#sec2 {
+    width: 100%;
+    height: 100vh;
+}
+
+#cardapio {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+#cardapio > img {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#cardapio > div {
+    /* height: 100%; Se tirar isso, funciona em 100%, se colocar fico 0%*/
+    border-top: 1px solid #29241917;
+    border-bottom: 1px solid #29241917;
+}
+
+#cardapio > div > form {
+    margin-left: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+select {
+    font-family: var(--fontYanone);
+    width: 500px;
+    padding: 15px 10px;
+    color: var(--color2);
+    font-size: 30px;
+    border: none;
+    margin-bottom: 40px;
+    cursor: pointer;
+    outline: none;
+}
+
+form > span {
+    margin-left: 30px;
+    margin-top: -3px;
+    font-size: 35px;
+    font-family: var(--fontNeue);
+}
+
+form > input {
+    font-family: var(--fontYanone);
+    font-weight: 300;
+    align-self: flex-end;
+    margin-top: -55px;
+    margin-right: 10px;
+    padding: 15px;
+    border: none;
+    background-color: var(--color1);
+    color: var(--color2);
+    font-size: 25px;
+    transition: 500ms ease 0s;
+    box-shadow: inset 0px 0px var(--color2);
+}
+
+form > input:hover {
+    box-shadow: inset 120px 00px var(--color2);
+    color: var(--color1);
+}
+
+#ficha {
+    width: 400px;
+    background-color: #292419;
+    background-image: url('fichaBurger2\ -\ Copia.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 25px;
+    position: relative;
+}
+
+/* #ficha > div {
+    width: 100%;
+    height: 100%;
+    background-color: #3f32158b;
+} */
+
+.fichaItemBurguerSVG {
+    width:120px;
+    height: 50px;
+    display: none;
+}
+
+#ficha p {
+    margin-top: 45px;
+    font-size: 40px;
+    color: var(--color3);
+    font-family: var(--fontYanone);
+    display: none;
+}
+
+#ficha span {
+    color : var(--color3);
+    font-size: 30px;
+    font-family: var(--fontYanone);
+    display: none;
+    border-bottom: 1px solid var(--color3);
+}
+
+
+#nameFicha {
+    position: absolute;
+    right: 10px;
+    font-family: var(--fontNeue);
+    font-size: 55px !important;
+    letter-spacing: 0.3rem;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+}
+
+hr {
+    position: absolute;
+    width: 350px;
+    transform: rotate(-90deg);
+    right: -137px;
+    top: 320px;
+    display: none;
+}
