@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html>
+
+        <head>
+
+            <title>ArrayExer</title>
+            <link rel="stylesheet" href="arrayExer.css" />
+            
+        </head>
+
+        <body>
+
+            <button onclick="show$off()" id="on_off">Mostrar Opções</button>
+
+            <div id="options">
+                <input type="button" class="opçoes" onclick="armazenarNumeros()" value="Salvar" />
+                <input type="button" class="opçoes" onclick="inverseMatrix()" value="Inverter" />
+                <input type="button" class="opçoes" onclick="crescenteMatrix()" value="Ordenar >" />
+            </div>
+            
+            <div id="input">
+                <input type="text" class="entradaNum" maxlength="2" />
+                <input type="text" class="entradaNum" maxlength="2" />
+                <input type="text" class="entradaNum" maxlength="2" />
+                <input type="text" class="entradaNum" maxlength="2" />
+            </div>
+
+            <section>
+
+                <div id="arraySalvo">
+
+                    <span id="apagar"></span>
+                    <img id="mostrar" src="assets/arrow.svg" />
+
+                </div>
+
+                <div id="arrayResultado">
+
+                    <span id="apagar2"></span>
+                    
+                </div>
+
+            </section>
+
+            <script src="arrayExer.js"></script>
+
+        </body>
+
+    </html>
