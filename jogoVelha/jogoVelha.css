@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Fuzzy Bubbles', cursive;
+    text-size-adjust: none;
+    font-size: 70px;
+    
+}
+
+body{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+article {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tab {
+    margin-top: 120px;
+    display: flex;
+    /* flex-flow: column wrap; */
+    /* easter Egg */
+    flex-flow: row wrap;
+    width: 28%;
+    height: 58%;
+}
+
+.parte {
+    background-color: #fff;
+    width:33.33%;
+    max-width: 33.33%;
+    height: 33.3%;
+    max-height: 33.3%;
+    box-sizing: border-box;
+}
+
+.parte:nth-child(1) {
+    border-top: none;
+    border-left: none;
+}
+.parte:nth-child(2) {
+    border-top: none;
+}
+.parte:nth-child(3){
+    border-top: none;
+    border-right: none;
+}
+.parte:nth-child(4){
+    border-left: none;
+}
+.parte:nth-child(6){
+    border-right: none;
+}
+.parte:nth-child(7){
+    border-bottom: none;
+    border-left: none;
+}
+.parte:nth-child(8){
+    border-bottom: none;
+}
+.parte:nth-child(9){
+    border-bottom: none;
+    border-right: none;
+}
+
+#reset {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    border: none;
+}
+
+#reset:hover {
+    color: rgb(126, 75, 75);
+}
+
+#resultadoMostrar {
+    margin-top: 30px;
+}
