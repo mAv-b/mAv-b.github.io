@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <html>
+
+        <head>
+
+            <title>CorridaJs</title>
+            <link rel="stylesheet" href="corridaJs.css" />
+
+        </head>
+
+        <body>
+            
+            <article>
+
+                <h1>Selecionar:</h1>
+                <div id="tiposDeCorrida">
+                    <input type="button" onclick="empateVerificador(0)" id="botãoUm" value="Rapida"/>
+                    <input type="button" onclick="empateVerificador(1)" id="botãoDois" value="Grande"/>
+                    <input type="button" onclick="empateVerificador(2)" id="botãoTres" value="Enduro"/>
+                </div>
+
+                <section id="sec1">
+                    <img id="trofeuImagem" src="Assets/trofeuPixelArt.png" />
+                    <h2 id="vencedorSentença">.........</h2>
+                </section>
+
+                <section id="sec2">
+
+                    <table>
+                        <tr>
+                            <th id="participante1">JogadorA</th>
+                            <td class= "voltasInserir">N°Volt</td>
+                        </tr>
+                        <tr>
+                            <th id="participante2">JogadorB</th>
+                            <td class= "voltasInserir">N°Volt</td>
+                        </tr>
+                        <tr>
+                            <th id="participante3">JogadorC</th>
+                            <td class= "voltasInserir">N°Volt</td>
+                        </tr>
+                    </table>
+
+                    <table>
+                        <tr>
+                            <th>Ouro</th>
+                            <td><span class="participanteAoPremio">JogadorA</span> <img class="medals" src="Assets/MedalGold.svg" /></td>
+                        </tr>
+                        <tr>
+                            <th>Prata</th>
+                            <td><span class="participanteAoPremio">JogadorB</span> <img class="medals" src="Assets/MedalSilver.svg" /></td>
+                        </tr>
+                        <tr>
+                            <th>Bronze</th>
+                            <td><span class="participanteAoPremio">JogadorC<span> <img class="medals" src="Assets/MedalBronze.svg" /></td>
+                        </tr>
+                    </table>
+                </section>
+
+            </article>
+
+            <script src="corridaJs.js"></script>
+
+        </body>
+
+    </html>

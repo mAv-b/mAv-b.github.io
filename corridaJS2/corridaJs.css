@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --fontRacing : 'Press Start 2P', cursive;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--fontRacing);
+}
+
+body {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("Assets/backGround.png");
+    background-position: 190px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: gradient 50s linear infinite;
+}
+
+article {
+    height: 100%;
+    background-color: #262626;
+    width: 75%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+h1 {
+    padding: 20px 15px;
+    font-size: 2.3rem;
+    margin-bottom: 50px;
+    align-self: flex-start;
+    color: rgb(214, 214, 214);
+}
+
+#tiposDeCorrida {
+    width:100%;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+#tiposDeCorrida input {
+    padding: 22px 20px;
+    background-color: rgb(214, 214, 214);
+    font-size: 1.2rem;
+}
+
+#tiposDeCorrida input:nth-child(2) {
+    margin: 0px 85px;
+}
+
+#sec1 {
+    margin-bottom: 80px;
+}
+
+#sec1 h2 {
+    color: rgb(214, 214, 214);
+    
+}
+
+#sec1 span {
+    text-decoration: underline;
+}
+
+#sec1 img {
+    width:130px;
+    height: 130px;
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    opacity: 0.1;
+}
+
+#sec2 {
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgb(214, 214, 214);
+    width: 100%;
+    text-align: center;
+}
+
+table {
+    width:425px;
+    margin-top: 30px;
+    display: inline-block;
+    color: #262626;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th,td {
+    width: 100%;
+    padding: 15px 50px;
+    line-height: 20px;
+    position: relative;
+}
+tr {
+    width: 100%;
+    border: 1px solid #262626;
+    padding: 0;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(214, 214, 214); 
+    
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(83, 83, 83); 
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(77, 77, 77); 
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 190px 0px;
+    }
+    50% {
+      background-position: 900px 0px;
+    }
+    100% {
+      background-position:  190px 0px;
+    }
+  }
+
+  .medals {
+      width:45px;
+      height: 45px;
+      position: absolute;
+      top: 3px
+  }
