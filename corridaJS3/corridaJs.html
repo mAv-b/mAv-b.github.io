@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+    <html>
+
+        <head>
+
+            <title>CorridaJs</title>
+            <link rel="stylesheet" href="corridaJs.css" />
+
+        </head>
+
+        <body>
+            
+            <article>
+
+                <div id="pagina1">
+
+                    <h1>Garragem</h1>
+
+                    <div id='Pedro' class="cards">
+
+                        <div class='card'>
+                            <a href="https://www.isometriclove.com/">
+                                <img src='Assets/Pedro.png'/>
+                            </a>
+                            <div style="margin:9px 0px;">
+                                <span id="nameCard">Pedro</span>
+                                <span>1lvl</span>
+                                <span>0exp</span>
+                            </div>
+                            <button onclick="gerarCarros(0)">Gerar Carro</button>
+                        </div>
+
+                        <form action="/action_page.php">
+                            <input type="radio" id = 'Pcarro1' value = 'carro1'/>
+                            <label class="meuCarroPedro" id='CPedro1' for="Pcarro1"></label>
+                            <input type="radio" id = 'Pcarro2' value = 'carro2'/>
+                            <label class="meuCarroPedro" id='CPedro2' for="Pcarro2"></label>
+                            <input type="radio" id = 'Pcarro3' value = 'carro3'/>
+                            <label class="meuCarroPedro" id='CPedro3' for="Pcarro3"></label>
+                            <input type="radio" id = 'Pcarro4' value = 'carro4'/>
+                            <label class="meuCarroPedro" id='CPedro4' for="Pcarro4"></label>
+                            <input type="radio" id = 'Pcarro5' value = 'carro5'/>
+                            <label class="meuCarroPedro" id='CPedro5' for="Pcarro5"></label>
+                        </form>
+                        
+                    </div>
+
+                    <div id='Juca' class="cards">
+
+                        <div class='card'>
+                            <a href="https://www.isometriclove.com/">
+                                <img src='Assets/Juca.png'/>
+                            </a>
+                            <div style="margin:9px 0px;">
+                                <span id="nameCard">Juca</span>
+                                <span>1lvl</span>
+                                <span>0exp</span>
+                            </div>
+                            <button onclick="gerarCarros(1)">Gerar Carro</button>
+                        </div>
+
+                        <form>
+                            <input type="radio" id = 'Jcarro1' value = 'carro1'/>
+                            <label id='CJuca1' for="Jcarro1"></label>
+                            <input type="radio" id = 'Jcarro2' value = 'carro2'/>
+                            <label id='CJuca2' for="Jcarro2"></label>
+                            <input type="radio" id = 'Jcarro3' value = 'carro3'/>
+                            <label id='CJuca3' for="Jcarro3"></label>
+                            <input type="radio" id = 'Jcarro4' value = 'carro4'/>
+                            <label id='CJuca4' for="Jcarro4"></label>
+                            <input type="radio" id = 'Jcarro5' value = 'carro5'/>
+                            <label id='CJuca5' for="Jcarro5"></label>
+                        </form>
+                    </div>
+
+                    <div id='Edna' class="cards">
+
+                        <div class='card'>
+                            <a href="https://www.isometriclove.com/">
+                                <img src='Assets/Edna.png'/>
+                            </a>
+                            <div style="margin:9px 0px;">
+                                <span id="nameCard">Edna</span>
+                                <span>1lvl</span>
+                                <span>0exp</span>
+                            </div>
+                            <button onclick="gerarCarros(2)">Gerar Carro</button>
+                        </div>
+
+                        <form>
+                            <input type="radio" id = 'Ecarro1' value = 'carro1'/>
+                            <label id='CEdna1' for="Ecarro1"></label>
+                            <input type="radio" id = 'Ecarro2' value = 'carro2'/>
+                            <label id='CEdna2' for="Ecarro2"></label>
+                            <input type="radio" id = 'Ecarro3' value = 'carro3'/>
+                            <label id='CEdna3' for="Ecarro3"></label>
+                            <input type="radio" id = 'Ecarro4' value = 'carro4'/>
+                            <label id='CEdna4' for="Ecarro4"></label>
+                            <input type="radio" id = 'Ecarro5' value = 'carro5'/>
+                            <label id='CEdna5' for="Ecarro5"></label>
+                        </form>
+                        
+                    </div>
+
+                    <button id="trocaDePagina" onclick="trocarPagina()">Pronto!</button>
+
+                </div>
+
+                <div id="pagina2">
+                    <h1>Selecionar:</h1>
+                    <div id="tiposDeCorrida">
+                        <input type="button" onclick="empateVerificador(10, 'expRapida')" id="botãoUm" value="Rapida"/>
+                        <input type="button" onclick="empateVerificador(70, 'expGrande')" id="botãoDois" value="Grande"/>
+                        <input type="button" onclick="empateVerificador(160, 'expEnduro')" id="botãoTres" value="Enduro"/>
+                    </div>
+
+                    <section id="sec1">
+                        <img id="trofeuImagem" src="Assets/trofeuPixelArt.png" />
+                        <h2 id="vencedorSentença">.........</h2>
+                    </section>
+
+                    <section id="sec2">
+
+                        <table>
+                            <tr>
+                                <th id="participante1">JogadorA</th>
+                                <td class= "voltasInserir">N°Volt</td>
+                            </tr>
+                            <tr>
+                                <th id="participante2">JogadorB</th>
+                                <td class= "voltasInserir">N°Volt</td>
+                            </tr>
+                            <tr>
+                                <th id="participante3">JogadorC</th>
+                                <td class= "voltasInserir">N°Volt</td>
+                            </tr>
+                        </table>
+
+                        <table>
+                            <tr>
+                                <th>Ouro</th>
+                                <td><span class="participanteAoPremio">JogadorA</span> <img class="medals" src="Assets/MedalGold.svg" /></td>
+                            </tr>
+                            <tr>
+                                <th>Prata</th>
+                                <td><span class="participanteAoPremio">JogadorB</span> <img class="medals" src="Assets/MedalSilver.svg" /></td>
+                            </tr>
+                            <tr>
+                                <th>Bronze</th>
+                                <td><span class="participanteAoPremio">JogadorC<span> <img class="medals" src="Assets/MedalBronze.svg" /></td>
+                            </tr>
+                        </table>
+                    </section>
+                    <button style="margin-top: 20px;" id="trocaDePagina" onclick="trocarPagina()">Garragem</button>
+                </div>
+            </article>
+
+            <script src="corridaJs.js"></script>
+
+        </body>
+
+    </html>
