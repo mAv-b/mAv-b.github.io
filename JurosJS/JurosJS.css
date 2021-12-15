@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    overflow-x: hidden;
 }
 
 body{
@@ -18,11 +18,10 @@ article{
     height: 100%;
 }
 
-section{padding: 50px;}
+section{padding: 50px;border-right: 1px solid black;}
 
 table{
     padding: 52px;
-    border-left: 1px solid black;
     overflow: scroll;
 }
 
@@ -60,3 +59,35 @@ button {
     padding: 10px;
     font-size: 17px;
 }
+
+#filtros {
+    margin-top: 100px;
+    height: 120px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#part2 {
+    padding: 52px;
+    overflow-y: scroll;
+    list-style-type: none;
+    color: #464646;
+    border-bottom: 2px solid black ;
+    height: 200px;
+    display: none;
+}
+
+li{
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.infoPart2 {
+    padding: 5px 50px;
+    border-bottom: 2px solid black;
+    display: block;
+}
+
+
