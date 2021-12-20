@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <html>
+
+        <head>
+            <title>ExerLoja</title>
+            <link rel="stylesheet" href="JurosJS.css" />
+        </head>
+
+        <body>
+            
+            <article>
+
+                <section>
+                    <form>
+                        <label for="nome">Nome:</label>
+                        <input id="nome" type="text" />
+                        <label for="data">Data de vencimento:</label>
+                        <input id="data" type="date"/>
+                        <label for="valor">Valor:</label>
+                        <input id="valor" type="number" />
+                    </form>
+                    <div>
+                        <button onclick="inserirCedula()">Armazenar.</button>
+                        <button onclick="chamarJuros()">Calcular Juros</button>
+                    </div>
+                    <div id='filtros'>
+                        <button onclick="ordenarNome()">Ordenar p/Nome</button>
+                        <button onclick="ordenarVencimento()">Ordenar p/Vencimento</button>
+                    </div>
+                </section>
+
+                <main>
+
+                    <ul id='part2'>
+                        <h2>Lista</h2>
+                        
+                    </ul>
+
+                    <form id="formFiltro">
+                        <fieldset>
+                            <legend>Filtros:</legend>
+                            <input placeholder="Data minima" class="filtros" type="date" />
+                            <input placeholder="Data maxima" class="filtros" type="date"/>
+                            <input placeholder="Valor minimo" class="filtros" type="number"/>
+                            <input placeholder="Valor maximo" class="filtros" type="number"/>
+                            <button type="button" id = "buttonFiltro" onclick="filtrar()">Filtrar</button>
+                        </fieldset>
+                        
+                    </form>
+                    
+
+                    <table id = "tabela">
+                        <tr>
+                            <th>Nome</th>
+                            <th>Vencimento</th>
+                            <th>Valor</th>
+                            <th>Valor + Juros</th>
+                        </tr>
+                        
+                    </table>
+                </main>
+
+            </article>
+
+            <script src="JurosJS.js"></script>
+        </body>
+
+    </html>
