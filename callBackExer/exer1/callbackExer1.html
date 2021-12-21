@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: azure;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            background-color: #5082ee;
+        }
+        input{
+            padding: 5px;
+            width: 200px;
+            border: none;
+            outline: none;
+            background-color: rgba(0, 0, 0, 0.407);
+            border-radius: 5px;
+        }
+        #back{
+            background-color: #3E46D6;
+            padding: 25px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            border-radius: 5px;
+        }
+
+        button{
+            background-color: #5082ee;
+            border: none;
+            padding: 7px 10px;
+            border-radius: 5px;
+        }
+
+        #quadro{
+            background-color: azure;
+            color: #363636;
+            border-radius: 10px;
+            text-align: center;
+            margin: 10px 0px 10px 65px;
+            height: 100px;
+            width: 200px;
+            max-width: 320px;
+            max-height: 100px;
+        }
+        button:active{
+            color:#363636;
+            background-color: #5082ee70;
+        }
+    </style>
+    
+    <title>CallbackFunction</title>
+</head>
+<body>
+    
+    <div id="back">
+        <div>
+            <span>Insira o Texto:</span>
+            <input type="text" />
+        </div>
+        <div id="quadro"></div>
+        <button>Insirir Texto</button>
+    </div>
+
+    <script src="callbackExer1.js"></script>
+
+</body>
+</html>
