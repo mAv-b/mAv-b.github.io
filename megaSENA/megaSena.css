@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+    overflow: hidden;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(#fff 70%, #292929 70%);
+}
+
+#quadro {
+    font-size: 60px;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+}
+
+#info {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+    z-index: 10;
+}
+
+a {
+    padding: 15px;
+    font-size: 60px;
+    color: #fff;
+    cursor: pointer;
+    transition: 200ms ease 0s;
+}
+
+a:hover {
+    color:transparent;
+    background: linear-gradient(-300deg,#665f5f 50%, #fff 50%);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+}
+
+.numeroSorteado {
+    width: 100px;
+    height: 100px;
+    background-color: #292929;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.bola, .bola2{
+    width: 200%;
+    height: 20px;
+    background-color: #665f5f;
+    position: absolute;
+}
+
+.bola {
+    transform: rotate(-30deg) translate(400px, 400px);
+    /* animation: moverLinhas 15s ease infinite; */
+}
+
+.bola2 {
+    transform: rotate(-30deg) translate(-400px, -400px);
+    /* animation: moverLinhas2 15s ease infinite; */
+}
+
+ @keyframes moverLinhas {
+    0% {transform: rotate(-30deg) translate(400px, 400px);}
+    50% {transform: rotate(-30deg) translate(-400px, -400px);}
+    100%{transform: rotate(-30deg) translate(400px,400px);}
+}
+
+@keyframes moverLinhas2 {
+    0% {transform: rotate(-30deg) translate(-400px, -400px);}
+    50% {transform: rotate(-30deg) translate(400px, 400px);}
+    100%{transform: rotate(-30deg) translate(-400px,-400px);}
+}
+
+.bola:nth-child(1), .bola2:nth-child(9){
+    bottom: 10px;
+}
+.bola:nth-child(2), .bola2:nth-child(10){
+    bottom: 60px;
+    
+}
+.bola:nth-child(3), .bola2:nth-child(11){
+    bottom: 110px;
+}
+.bola:nth-child(4), .bola2:nth-child(12){
+    bottom: 160px;
+}
+.bola:nth-child(5), .bola2:nth-child(13){
+    bottom: 210px;
+}
+.bola:nth-child(6), .bola2:nth-child(14){
+    bottom: 260px;
+}
+.bola:nth-child(7), .bola2:nth-child(15){
+    bottom: 310px;
+}
+.bola:nth-child(8), .bola2:nth-child(16){
+    bottom:360px;
+}
