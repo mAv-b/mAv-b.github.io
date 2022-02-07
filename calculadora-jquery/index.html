@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Calculadora $()</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+    <div>
+        <main>
+            <section id='screen'>
+                <span id="screen-display"></span>
+                <input type="text" id='screen-input'/>
+            </section>
+            <section id="keyboard">
+                <button class="clear">AC</button>
+                <button class="operation" value="/">/</button>
+                <button class="number" value="7">7</button>
+                <button class="number" value="8">8</button>
+                <button class="number" value="9">9</button>
+                <button class="operation" value="x">x</button>
+                <button class="number" value="4">4</button>
+                <button class="number" value="5">5</button>
+                <button class="number" value="6">6</button>
+                <button class="operation" value="-">-</button>
+                <button class="number" value="1">1</button>
+                <button class="number" value="2">2</button>
+                <button class="number" value="3">3</button>
+                <button class="operation" value="+">+</button>
+                <button class="dot" value=".">.</button>
+                <button class="number" value="0">0</button>
+                <button class="delete">del</button>
+                <button class="equal">=</button>
+            </section>
+        </main>
+        <section id="history">
+
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
