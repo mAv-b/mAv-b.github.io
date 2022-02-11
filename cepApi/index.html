@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html>
+
+        <head>
+
+            <title>API-cep</title>
+            <link rel="stylesheet" href="style.css" />
+            <meta charset="UTF-8" />
+
+        </head>
+
+        <body>
+            
+            <article>
+
+                <main>
+                    <div>
+                        <input type="text" placeholder="CEP"/>
+                        <span id='invalid'></span>
+                        <button>Consultar</button>
+                    </div>
+                    <div id="blockInfo">
+
+                    </div>
+                </main>
+                <section>
+                    <iframe src="https://maps.google.com/maps?query=Goias&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"></iframe>
+                </section>
+
+            </article>
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+            <script src="app.js"></script>
+        </body>
+
+    </html>
